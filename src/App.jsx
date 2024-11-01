@@ -5,6 +5,7 @@ import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css"
 import { RequestAirdrop } from "./components/RequestAirdrop";
 import { GetSOLBalance } from "./components/GetSOLBalance";
+import { SendTransaction } from "./components/SendTransaction";
 
 export default function App() {
   const endpoint = clusterApiUrl('devnet')
@@ -16,6 +17,7 @@ export default function App() {
           <WalletMultiButton />
           <RequestAirdrop />
           <GetSOLBalance />
+          <SendTransaction />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
