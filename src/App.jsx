@@ -6,6 +6,7 @@ import "@solana/wallet-adapter-react-ui/styles.css"
 import { RequestAirdrop } from "./components/RequestAirdrop";
 import { GetSOLBalance } from "./components/GetSOLBalance";
 import { SendTransaction } from "./components/SendTransaction";
+import { SignMessage } from "./components/SignMessage";
 
 export default function App() {
   const endpoint = clusterApiUrl('devnet')
@@ -18,6 +19,7 @@ export default function App() {
           <RequestAirdrop />
           <GetSOLBalance />
           <SendTransaction />
+          <SignMessage />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
